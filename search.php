@@ -16,10 +16,10 @@
                         <div class='mans-wrap'>
                             <figure><img src='$row[product_path].jpg' class='img-fluid' alt=''/>
                                 <a href='$row[product_path].jpg' data-lightbox='mans' data-title='$row[product_category]' class='link-preview' title='Preview'/><i class='ion ion-eye'></i></a>
-                                <a href='product.php?product_number=$row[product_number]' class='link-details' title='More Details'><i class='ion ion-android-open'></i></a>
+                                <a href='product$row[product_id].php?product_no=$row[product_no]' class='link-details' title='More Details'><i class='ion ion-android-open'></i></a>
                             </figure>
                             <div class='mans-info'>
-                                <h4><a href='product.php?product_number=$row[product_number]'>$row[product_name]</a></h4>
+                                <h4><a href='product$row[product_id].php?product_no=$row[product_no]'>$row[product_name]</a></h4>
                                 <p>NT.$row[product_price]</p>
                             </div>
                         </div>
@@ -48,10 +48,10 @@
                     <div class='mans-wrap'>
                         <figure><img src='$row[product_path].jpg' class='img-fluid' alt=''/>
                             <a href='$row[product_path].jpg' data-lightbox='mans' data-title='$row[product_category]' class='link-preview' title='Preview'/><i class='ion ion-eye'></i></a>
-                            <a href='product.php?product_number=$row[product_number]' class='link-details' title='More Details'><i class='ion ion-android-open'></i></a>
+                            <a href='product$row[product_id].php?product_no=$row[product_no]' class='link-details' title='More Details'><i class='ion ion-android-open'></i></a>
                         </figure>
                         <div class='mans-info'>
-                            <h4><a href='product.php?product_number=$row[product_number]'>$row[product_name]</a></h4>
+                            <h4><a href='product$row[product_id].php?product_no=$row[product_no]'>$row[product_name]</a></h4>
                             <p>NT.$row[product_price]</p>
                         </div>
                     </div>
@@ -76,7 +76,7 @@
 </head>
 
 <body>
-    <?php include("header.php"); ?>
+    <?php include("main_header.php"); ?>
     <!--==========================search ============================-->
     <section id="mans" class="section-bg">
         <div class="container">

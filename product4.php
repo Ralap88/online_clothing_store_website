@@ -1,6 +1,6 @@
 <?php
 $link = mysqli_connect('localhost','root','root123456','group_07')or die ("無法開啟<br>");
-$idd=$_GET['product_id'];
+//$idd=$_GET['product_id'];
 $num=$_GET['product_no'];
 
 // 送出編碼的MySQL指令
@@ -9,7 +9,7 @@ mysqli_query($link, "SET collation_connection = 'utf8_unicode_ci'");
 
 // // 資料庫查詢(送出查詢的SQL指令)
 if ($result = mysqli_query($link, "SELECT * FROM product where product_no='$num' and product_id='4'")) {
-        $data = "";
+    $data = "";
     
     while ($row = mysqli_fetch_assoc($result)) {
        

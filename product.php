@@ -4,6 +4,7 @@
 
     // 資料庫查詢(送出查詢的SQL指令)
     if ($result = mysqli_query($link, "SELECT * FROM product where product_number='$num' ")) {
+        $data = "";
         
         while ($row = mysqli_fetch_assoc($result)) {
                 if($row['product_id']=='1') $title="男裝";

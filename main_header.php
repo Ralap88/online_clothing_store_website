@@ -1,12 +1,11 @@
 <?php
-   
-if (isset($_COOKIE["account"]))
-  $user = $_COOKIE["account"];
+    if (isset($_COOKIE["account"]))
+    $user = $_COOKIE["account"];
 ?>
 <header id="header">
         <div class="container-fluid">
             <div id="logo" class="pull-left">
-                <h1><a href="#intro" class="scrollto">Shop</a></h1>
+                <h1><a href="index.php" class="scrollto">Shop</a></h1>
             </div>
             <div class="c1">
                 <form name="forml" method="post" action="search.php">
@@ -16,19 +15,19 @@ if (isset($_COOKIE["account"]))
             </div>
             <nav id="nav-menu-container">
                 <ul class="nav-menu">
-                    <li class="menu-active"><a href="#intro">主頁</a></li>
-                    <li><a href="#about">關於我們</a></li>
+                    <li><a href="index.php">主頁</a></li>
+                    <li><a href="index.php#about">關於我們</a></li>
                     <li><a href="cart1.php">購物車</a></li>
                     <li><a href="man.php">男裝</a></li>
                     <li><a href="woman.php">女裝</a></li>
-                    <li class="menu-has-children"><a href="">限時特價</a>
+                    <li class="menu-has-children"><a href="index.php">限時特價</a>
                         <ul>
-                            <li><a href="#summersale">夏日來臨</a></li>
-                            <li><a href="#wintersale">冬日出清</a></li>
-                            <li><a href="#springsale">春節特賣</a></li>
+                            <li><a href="index.php#summersale">夏日來臨</a></li>
+                            <li><a href="index.php#wintersale">冬日出清</a></li>
+                            <li><a href="index.php#springsale">春節特賣</a></li>
                         </ul>
                     </li>
-                    <li><a href="#contact">聯絡我們</a></li>
+                    <li><a href="index.php#contact">聯絡我們</a></li>
                     <li><a href="message.php">討論區</a></li>
                     <?php
                         if (isset($user)) {

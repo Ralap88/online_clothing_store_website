@@ -1,6 +1,6 @@
 <?php
     if (isset($_COOKIE["account"]))
-      $user = $_COOKIE["account"];
+    $user = $_COOKIE["account"];
 ?>
     <header id="header">
         <div class="container-fluid">
